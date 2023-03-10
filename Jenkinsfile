@@ -8,7 +8,7 @@ pipeline {
                 git branch: 'develop', url: 'https://github.com/ivanmunozm/zabbix.git'
             }
         }
-        stage(){
+        stage('docker'){
             steps {
                 echo 'Instalando zabbix'
             }
