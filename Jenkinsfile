@@ -8,5 +8,10 @@ pipeline {
                 git branch: 'develop', url: 'https://github.com/ivanmunozm/zabbix.git'
             }
         }
+        stage(){
+            steps {
+                echo 'Instalando zabbix'
+            }
+        }
     }
 }
