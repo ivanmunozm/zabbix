@@ -5,7 +5,7 @@ pipeline {
         stage('install-zabbix') {
             steps {
                 echo 'bajando fuentes'
-                git branch: 'main', url: 'https://github.com/ivanmunozm/zabbix.git'
+                git branch: 'develop', url: 'https://github.com/ivanmunozm/zabbix.git'
             }
         }
     }
