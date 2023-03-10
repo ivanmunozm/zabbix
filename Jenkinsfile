@@ -8,6 +8,16 @@ pipeline {
                 git branch: 'develop', url: 'https://github.com/ivanmunozm/zabbix.git'
             }
         }
+        stage('verificar herramientas'){
+            steps {
+                sh '''
+                  docker version
+                  docker info
+                  docker compose version
+                  curl --version
+                '''
+            }
+        }
         stage('docker'){
             steps {
                 echo 'Instalando zabbix'
