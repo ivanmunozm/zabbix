@@ -21,7 +21,7 @@ pipeline {
         stage('docker'){
             steps {
                 echo 'Instalando zabbix'
-                sh 'docker-compose up -d'
+                //sh 'docker-compose up -d'
             }
         }
     }
